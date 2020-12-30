@@ -26,6 +26,7 @@ b) Pull this repo to your local machine, make a jar by running **`mvn package`**
   @BeforeSuite(alwaysRun = true)
   public void beforeSuiteSetUp() {
     // Instantiate a map with your needed Environment values
+    
     Map<String, String> envData = new HashMap<>();
     envData.put("Base URL", "https://google.com/");
     envData.put("User", "Admin");
@@ -37,7 +38,8 @@ b) Pull this repo to your local machine, make a jar by running **`mvn package`**
     AllureEnv.createAllureEnvironmentFile(envData);
     
     /*
-    If your /allure-results is in custom directory – just pass one more parameter with customPath to your /allure-results directory
+    If your /allure-results is in custom directory – just pass one more parameter 
+    with customPath to your /allure-results directory
     */ 
     AllureEnv.createAllureEnvironmentFile(envData, "/");
     
@@ -48,4 +50,5 @@ b) Pull this repo to your local machine, make a jar by running **`mvn package`**
 2. Now you're all set to run your suite.
 
 3. Once suite is finished, generate allure report and take a look on the **Environment** section:
-![Allure Report Results](https://ibb.co/3djVmcp)
+
+![Allure Report Results](https://i.ibb.co/RbstTc3/Allure-Environment-Creator.png)
