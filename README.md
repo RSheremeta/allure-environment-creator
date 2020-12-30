@@ -4,8 +4,8 @@ This tiny Library helps you to serve and store environment data for Allure easil
 ## Installation
 1 Since it's not pushed to the MVN central repository yet, there are two installation options:
 
-a) Download already compiled and packaged **.jar** file [here]("https://") and proceed to the 2nd step
-b) Pull this repo to your local machine, make a jar by running **`mvn package`** in the repo directory and proceed to the 2nd step
+* Download already compiled and packaged **.jar** file [HERE][here] and proceed to the 2nd step
+* Pull this repo to your local machine, make a jar by running **`mvn package`** in the repo directory and proceed to the 2nd step
 
 2 Put a **.jar** file into your project directory (for instance – create root dir `~/libs/` and paste there)
 
@@ -41,7 +41,7 @@ b) Pull this repo to your local machine, make a jar by running **`mvn package`**
     If your /allure-results is in custom directory – just pass one more parameter 
     with customPath to your /allure-results directory
     */ 
-    AllureEnv.createAllureEnvironmentFile(envData, "/");
+    AllureEnv.createAllureEnvironmentFile(envData, "/custom/path/to/allure-results/");
     
     // some your other code
   }
@@ -52,3 +52,5 @@ b) Pull this repo to your local machine, make a jar by running **`mvn package`**
 3. Once suite is finished, generate allure report and take a look on the **Environment** section:
 
 ![Allure Report Results](https://i.ibb.co/RbstTc3/Allure-Environment-Creator.png)
+
+[here]: http://s000.tinyupload.com/download.php?file_id=00747392328180442744&t=0074739232818044274430069/

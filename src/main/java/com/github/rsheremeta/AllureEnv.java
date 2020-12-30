@@ -21,7 +21,7 @@ public final class AllureEnv {
   public static void createAllureEnvironmentFile(Map<String, String> propsConfig, String pathToAllureResultsDir) {
     propsConfig.forEach(props::setProperty);
 
-    try(FileOutputStream fos = new FileOutputStream(new File(pathToAllureResultsDir))) {
+    try(FileOutputStream fos = new FileOutputStream(new File(pathToAllureResultsDir + "/environment.properties"))) {
       props.store(fos, "Environment properties data for Allure report");
       System.out.println("Allure environment.properties file has been created and stored successfully in the " + pathToAllureResultsDir);
     } catch (IOException e) {
