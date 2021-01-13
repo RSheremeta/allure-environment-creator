@@ -4,10 +4,10 @@ This tiny Library helps you to serve and store environment data for Allure easil
 ## Installation
 1 Since it's not pushed to the MVN central repository yet, there are two installation options:
 
-* Download already compiled and packaged **.jar** file [HERE][here] and proceed to the 2nd step
-* Pull this repo to your local machine, make a jar by running **`mvn package`** in the repo directory and proceed to the 2nd step
+* Download already compiled and packaged **Allure-Environment-Creator-1.0.jar** file [HERE][here] and proceed to the 2nd step
+* Download source code [HERE][here] to your local machine, make a jar by running **`mvn package`** in the repo directory and proceed to the 2nd step
 
-2 Put a **.jar** file into your project directory (for instance – create root dir `~/libs/` and paste there)
+2 Put a **Allure-Environment-Creator-1.0.jar** file into your project directory (for instance – create root dir `~/libs/` and paste there)
 
 3 Add this dependency to your `pom.xml` (**systemPath** value is for instance)
 ````
@@ -53,4 +53,4 @@ This tiny Library helps you to serve and store environment data for Allure easil
 
 ![Allure Report Results](https://i.ibb.co/RbstTc3/Allure-Environment-Creator.png)
 
-[here]: http://s000.tinyupload.com/download.php?file_id=00747392328180442744&t=0074739232818044274430069/
+[here]: https://github.com/RSheremeta/Allure-Environment-Creator/releases
