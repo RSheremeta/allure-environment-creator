@@ -32,7 +32,7 @@ public final class AllureEnv {
   }
 
   public static void createAllureEnvironmentFile(Map<String, String> propsConfig) {
-    createAllureEnvironmentFile(propsConfig, System.getProperty("user.dir") + "/target/allure-results/environment.properties");
+    createAllureEnvironmentFile(propsConfig, System.getProperty("user.dir") + "/target/allure-results/");
   }
 
 }
